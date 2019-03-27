@@ -33,7 +33,7 @@
     </head>
     <body>
         <div align="center">
-            <p>Choose a power setting then press the Spin button. You will be alerted to the prize won when the spinning stops.</p>
+            <p>Choose a power setting then press the Spin button. The selected person will be alert when the spinning stops.</p>
             <br />
             <table cellpadding="0" cellspacing="0" border="0">
             <tr>
@@ -73,7 +73,7 @@
             let theWheel = new Winwheel({
                 'outerRadius'     : 212,        // Set outer radius so wheel fits inside the background.
                 'innerRadius'     : 75,         // Make wheel hollow so segments don't go all way to center.
-                'textFontSize'    : 24,         // Set default font size for the segments.
+                'textFontSize'    : 20,         // Set default font size for the segments.
                 'textOrientation' : 'vertical', // Make text vertial so goes down from the outside of wheel.
                 'textAlignment'   : 'outer',    // Align text to outside of wheel.
                 'numSegments'     : 18,         // Specify number of segments.
@@ -101,7 +101,7 @@
                 'animation' :           // Specify the animation to use.
                 {
                     'type'     : 'spinToStop',
-                    'duration' : 10,    // Duration in seconds.
+                    'duration' : 30,    // Duration in seconds.
                     'spins'    : 3,     // Default number of complete spins.
                     'callbackFinished' : alertPrize,
                     'callbackSound'    : playSound,   // Function to call when the tick sound is to be triggered.
@@ -109,7 +109,7 @@
                 },
                 'pins' :				// Turn pins on.
                 {
-                    'number'     : 24,
+                    'number'     : 18,
                     'fillStyle'  : 'silver',
                     'outerRadius': 4,
                 }
@@ -226,6 +226,7 @@
                     alert('Oh no, you have gone BANKRUPT!');
                 } else {
                     alert("這輪抽中的是... " + indicatedSegment.text);
+                    resetWheel();
                 }
             }
         </script>
