@@ -76,7 +76,7 @@
                 'textFontSize'    : 20,         // Set default font size for the segments.
                 'textOrientation' : 'vertical', // Make text vertial so goes down from the outside of wheel.
                 'textAlignment'   : 'outer',    // Align text to outside of wheel.
-                'numSegments'     : 19,         // Specify number of segments.
+                'numSegments'     : 21,         // Specify number of segments.
                 'segments'        :             // Define segments including colour and text.
                 [                               // font size and test colour overridden on backrupt segments.
                    {'fillStyle' : '#ee1c24', 'text' : '老師回答'},
@@ -90,19 +90,21 @@
                    {'fillStyle' : '#ee1c24', 'text' : '孟芸'},
                    {'fillStyle' : '#3cb878', 'text' : '政瑜'},
                    {'fillStyle' : '#f26522', 'text' : '昱翔'},
-		   {'fillStyle' : '#428512', 'text' : '這題跳過'},
+		           {'fillStyle' : '#428512', 'text' : '這題跳過'},
                    {'fillStyle' : '#a186be', 'text' : '志明'},
                    {'fillStyle' : '#fff200', 'text' : '國彬'},
-                   {'fillStyle' : '#00aef0', 'text' : '彥麟'},
+                   {'fillStyle' : '#00aef0', 'text' : '俊賢'},
                    {'fillStyle' : '#ee1c24', 'text' : '柏宏'},
                    {'fillStyle' : '#f6989d', 'text' : '季霖'},
-                   {'fillStyle' : '#f26522', 'text' : '嘉妤'},
+                   {'fillStyle' : '#f7f532', 'text' : '嘉妤'},
+                   {'fillStyle' : '#c2d584', 'text' : '嘉鴻'},
+                   {'fillStyle' : '#a24f99', 'text' : '聯政'},
                    {'fillStyle' : '#3cb878', 'text' : '下課'}
                 ],
                 'animation' :           // Specify the animation to use.
                 {
                     'type'     : 'spinToStop',
-                    'duration' : 30,    // Duration in seconds.
+                    'duration' : 20,    // Duration in seconds.
                     'spins'    : 3,     // Default number of complete spins.
                     'callbackFinished' : alertPrize,
                     'callbackSound'    : playSound,   // Function to call when the tick sound is to be triggered.
@@ -110,7 +112,7 @@
                 },
                 'pins' :				// Turn pins on.
                 {
-                    'number'     : 18,
+                    'number'     : 21,
                     'fillStyle'  : 'silver',
                     'outerRadius': 4,
                 }
