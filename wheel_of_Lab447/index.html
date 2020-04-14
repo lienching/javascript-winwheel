@@ -79,14 +79,14 @@
                 'numSegments'     : 15,         // Specify number of segments.
                 'segments'        :             // Define segments including colour and text.
                 [                               // font size and test colour overridden on backrupt segments.
-                   {'fillStyle' : '#3cb878', 'text' : '振源'},
+                   {'fillStyle' : '#3fb9b8', 'text' : '振源'},
                    {'fillStyle' : '#f6989d', 'text' : '祐銘Mark'},
                    {'fillStyle' : '#00aef0', 'text' : '志勝'},
                    {'fillStyle' : '#f26522', 'text' : '子擎'},
                    {'fillStyle' : '#e70697', 'text' : 'Arbind'},
                    {'fillStyle' : '#fff200', 'text' : '連慶'},
                    {'fillStyle' : '#f26522', 'text' : '昱翔'},
-		           {'fillStyle' : '#428512', 'text' : '這題跳過'},
+		   {'fillStyle' : '#428512', 'text' : '這題跳過'},
                    {'fillStyle' : '#fff200', 'text' : '國彬'},
                    {'fillStyle' : '#ee1c24', 'text' : '柏宏'},
                    {'fillStyle' : '#f6989d', 'text' : '季霖'},
@@ -106,7 +106,7 @@
                 },
                 'pins' :				// Turn pins on.
                 {
-                    'number'     : 16,
+                    'number'     : 15,
                     'fillStyle'  : 'silver',
                     'outerRadius': 4,
                 }
@@ -210,6 +210,7 @@
                 wheelSpinning = false;          // Reset to false to power buttons and spin can be clicked again.
             }
 
+            
             // -------------------------------------------------------
             // Called when the spin animation has finished by the callback feature of the wheel because I specified callback in the parameters.
             // -------------------------------------------------------
@@ -223,9 +224,11 @@
                     alert('Oh no, you have gone BANKRUPT!');
                 } else {
                     alert("這輪抽中的是... " + indicatedSegment.text);
-                    resetWheel();
+		    resetWheel();
                 }
             }
+            
+            
         </script>
     </body>
 </html>
